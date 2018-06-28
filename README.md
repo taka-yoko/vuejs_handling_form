@@ -78,7 +78,22 @@ v-model="userData.email">
 
 # Modifying User Input with Input Modifiers
 
+Input Modifiers(修飾子)
+https://jp.vuejs.org/v2/guide/forms.html#lazy
+
+`.lazy`
+inputイベント後ではなく、changeイベント後にデータと
+入力を同期する。入力の度ではなくfocusが外れたら同期
+
+`.trim`
+入力の前後の空白を自動的にトリミングする
+
+`.number`
+ユーザの入力を数値として自動的に型変換したいときに使用
+
 # Binding <textarea> and Saving Line Breaks
+
+
 
 # Using Checkboxes and Saving Data in Arrays
 
