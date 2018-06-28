@@ -93,7 +93,42 @@ inputイベント後ではなく、changeイベント後にデータと
 
 # Binding <textarea> and Saving Line Breaks
 
+以下は動作しない
 
+```html
+<textarea>{{ test }}</textarea>
+```
+
+以下のようにv-modelを指定すれば、default値が設定される。
+
+```html
+<textarea
+  id="message"
+  rows="5"
+  class="form-control"
+  v-model="message"></textarea>
+```
+
+```javascript
+data() {
+    return {
+        userData: {
+            email: '',
+            password: '',
+            age: 27
+        },
+        message: "A default message"
+    }
+}
+```
+
+## textareaに入力した改行を保った状態で表示したい場合
+
+出力htmlのstyleを以下のようにする。
+
+```html
+ <p style="white-space: pre">Message: {{ message }} </p>
+ ```
 
 # Using Checkboxes and Saving Data in Arrays
 
