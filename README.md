@@ -215,7 +215,7 @@ data() {
 <p>Gender: {{ gender }}</p>
 ```
 
-# Handling Dropdowns with <select> and <option>
+# Handling Dropdowns with select and option
 
 動的にselectタグのoptionを設定する。
 
@@ -345,6 +345,3 @@ methods: {
     }
 },
 ```
-
-# Time to Practice - Forms
-
